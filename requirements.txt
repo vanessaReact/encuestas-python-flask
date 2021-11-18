@@ -1,0 +1,5 @@
+flask
+flask-sqlalchemy
+mysql-connector-python
+flask-cors
+flask-jwt-extended
