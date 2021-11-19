@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask,jsonify, make_response
 from datetime import timedelta
 from flask_cors import CORS
 from flask_jwt_extended import JWTManager 
@@ -14,6 +14,11 @@ app.permanent_session_lifetime=timedelta(minutes=30)
 app.config["JWT_SECRET_KEY"]="MY_PROJECT_VANESSA"
 jwt=JWTManager(app)
 
+@app.route('/')
+def home():
+        return make_response(jsonify({
+                "msg":"Encuestas vanessa React"
+        }),200)
 
 from src.routes import userRoute
 from src.routes import encuestaRoute 
