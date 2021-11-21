@@ -27,5 +27,7 @@ from src.routes import tipoPreguntaRoute
 from src.routes import preguntaRoute
 from src.routes import opcionRoute
 from src.routes import preguntaRespuestaRoute
+"""
 def create_app():
     app.run(debug=True, port=5000)
+"""
